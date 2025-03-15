@@ -1,0 +1,39 @@
+# IDE - JetBrains
+.idea/
+
+# Otros archivos comunes para ignorar
+*.log
+*.swp
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Ruby/Rails
+*.rbc
+capybara-*.html
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
+# Ignore bundler config
+/.bundle
+
+# Ignore all logfiles and tempfiles
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials
+/config/master.key 
