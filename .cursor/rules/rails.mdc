@@ -1,0 +1,4 @@
+# Rails Conventions
+- Follow RESTful conventions in routes and controllers.
+- Use ActiveRecord efficiently.
+- Avoid business logic in controllers.

@@ -1,0 +1,5 @@
+# always print # General Project Rules
+- Code Conventions
+- Follow Ruby and Rails best practices.
+- Use descriptive names for variables and methods.
+- Keep files organized according to the MVC pattern.

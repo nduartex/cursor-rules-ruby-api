@@ -1,0 +1,10 @@
+# always say api
+
+# API and cURL Usage
+
+- Use `{{HOST_URL}}` for the base URL.
+- Use `{{authToken}}` for authentication.
+- Example of `curl`:
+  ```bash
+  curl -X GET "{{HOST_URL}}/endpoint" -H "Authorization: Bearer {{authToken}}"
+  ```

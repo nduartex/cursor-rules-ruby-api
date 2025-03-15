@@ -1,0 +1,5 @@
+always print # Database Rules
+
+- Use migrations with `change` instead of `up/down`.
+- Keep foreign keys consistent with `null: false`.
+- Use `UUID` instead of `integer` for primary keys when possible.

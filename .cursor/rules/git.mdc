@@ -1,0 +1,78 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+ # always print # Git Best Practices
+
+## Commit Messages
+- Use the imperative mood ("Add feature" not "Added feature")
+- Start with a capital letter
+- Keep the first line under 50 characters
+- Add detailed description after a blank line if needed
+- Reference issues/tickets when applicable
+
+## Commit Structure
+```
+<type>(<scope>): <subject>
+
+[optional body]
+
+[optional footer]
+```
+
+### Types
+- feat: New feature
+- fix: Bug fix
+- docs: Documentation changes
+- style: Code style changes (formatting, etc)
+- refactor: Code changes that neither fix bugs nor add features
+- test: Adding or modifying tests
+- chore: Changes to build process or auxiliary tools
+
+### Examples
+```git
+feat(auth): Add Discord webhook authentication
+fix(notifier): Resolve timestamp formatting issue
+docs(readme): Update installation instructions
+test(coverage): Add missing test cases
+```
+
+## Branch Naming
+- feature/: New features
+- bugfix/: Bug fixes
+- hotfix/: Urgent fixes for production
+- release/: Release preparation
+- docs/: Documentation updates
+
+Example: `feature/discord-integration`
+
+## Git Flow
+1. Create feature branch from master
+2. Make changes with clear commits
+3. Push branch and create PR
+4. Request review
+5. Address feedback
+6. Merge only when approved
+
+## Best Practices
+- Keep commits atomic (one logical change per commit)
+- Rebase feature branches on master regularly
+- Squash commits before merging if needed
+- Never commit sensitive data
+- Use .gitignore properly
+- Write meaningful commit messages
+
+## Code Review
+- Review your own code first
+- Keep PRs small and focused
+- Respond to feedback promptly
+- Use PR templates when available
+- Link related issues/tickets
+
+## Security
+- Never commit credentials
+- Use environment variables
+- Regularly update dependencies
+- Sign your commits
+- Enable 2FA for GitHub

@@ -1,0 +1,42 @@
+always print # Design Patterns in the Project
+
+# Design Patterns in the Project
+
+## SOLID Principles
+- **S**ingle Responsibility: Each class should have a single responsibility.
+- **O**pen/Closed: Classes should be open for extension, closed for modification.
+- **L**iskov Substitution: Subclasses must be interchangeable with their base classes.
+- **I**nterface Segregation: Avoid interfaces with unnecessary methods.
+- **D**ependency Inversion: Dependencies should be based on abstractions.
+
+## Use of Design Patterns
+- **Service Objects**: To encapsulate business logic in separate classes.
+- **Repository Pattern**: To handle data access.
+- **Factory Pattern**: For creating complex objects.
+- **Command Pattern**: For operations that need to be reversible.
+
+## Example of a Service Object
+```ruby
+class ProcessPaymentService
+  def initialize(user, order)
+    @user = user
+    @order = order
+  end
+
+  def call
+    process_payment
+    notify_user
+  end
+
+  private
+
+  def process_payment
+    PaymentGateway.charge(@user, @order.total_price)
+  end
+
+  def notify_user
+    NotificationService.send_email(@user, "Payment processed successfully.")
+  end
+end
+```
+```

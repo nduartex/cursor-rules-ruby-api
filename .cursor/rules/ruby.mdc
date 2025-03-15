@@ -1,0 +1,5 @@
+# always print # Rules for Ruby
+- Syntax and Style
+- Follow the Ruby Style Guide.
+- Prefer unless instead of if !.
+- Use &. for safe calls on nil objects.

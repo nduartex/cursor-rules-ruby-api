@@ -1,0 +1,14 @@
+# always say security
+
+# Security Rules
+
+- Use Devise for authentication.
+- Apply `before_action :authenticate_user!` in controllers.
+- Do not expose sensitive data in JSON responses.
+
+# API Versioning Rules
+
+- Version APIs in the URL (e.g.: `/api/v1/resource`).
+- Maintain compatibility with previous versions.
+- Clearly document changes between versions.
+- Use headers to indicate API version in responses.

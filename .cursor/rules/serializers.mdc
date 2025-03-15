@@ -1,0 +1,32 @@
+# always say serializers
+
+# Rules for Serializers
+
+- Each model should have its own serializer.
+- Use JSONAPI::Serializer as the standard.
+- Avoid deep nesting of relationships (maximum 2 levels).
+- Explicitly define which attributes to expose, never use `attributes *Model.column_names`.
+- For relationships, use custom attributes instead of `serializer:` to avoid data duplication in the response.
+- Always include ID fields, timestamps, and key attributes.
+- Do not expose sensitive data such as tokens or passwords.
+
+## Example of a good serializer
+```ruby
+class UserSerializer
+  include JSONAPI::Serializer
+
+  attributes :id, :name, :email, :created_at, :updated_at
+
+  attribute :profile do |object|
+    object.profile ? {
+      id: object.profile.id,
+      bio: object.profile.bio,
+      avatar_url: object.profile.avatar_url
+    } : nil
+  end
+
+  attribute :role do |object|
+    object.admin? ? 'admin' : 'user'
+  end
+end
+```

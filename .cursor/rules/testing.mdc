@@ -1,0 +1,5 @@
+# always print # Testing Rules
+- Write tests with RSpec.
+- Use FactoryBot to generate test data.
+- Follow TDD/BDD to ensure code quality.
+- Always include edge cases.

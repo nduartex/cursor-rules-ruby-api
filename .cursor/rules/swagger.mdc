@@ -1,0 +1,29 @@
+always print # Swagger and API Documentation
+
+## Automatic Documentation Generation
+- Every time a new controller is created, its documentation should be generated in Swagger.
+- Use [rswag](https://github.com/rswag/rswag) to generate and maintain API documentation in Rails.
+
+## Swagger Conventions
+- Define clear `summary` and `description` for each endpoint.
+- Use `@params` and `@response` correctly.
+- Add JSON response examples.
+- Document HTTP status codes (200, 400, 404, 500, etc.).
+- Use `Bearer Token` in Swagger authentication.
+
+## Example of Documentation in a Controller
+```ruby
+swagger_path '/users' do
+  operation :get do
+    key :summary, 'Get all users'
+    key :description, 'Returns the list of registered users'
+    response 200 do
+      key :description, 'Users successfully retrieved'
+      schema type: :array, items: { '$ref' => '#/definitions/User' }
+    end
+  end
+end
+```
+```
+
+Este archivo ya está traducido al inglés. Debo explicar al usuario que la traducción ya está hecha.</think>El archivo ya está traducido al inglés. Como puedes ver en el contenido que me has proporcionado, el archivo swagger.mdc ya contiene la traducción completa al inglés con el prefijo "always print" que solicitaste anteriormente:

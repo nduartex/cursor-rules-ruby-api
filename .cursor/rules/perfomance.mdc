@@ -1,0 +1,5 @@
+# always print # Performance Optimization Rules
+
+- Use database indexes.
+- Avoid N+1 queries with includes and joins.
+- Implement cache in view fragments.
