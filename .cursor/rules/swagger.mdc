@@ -1,8 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 always print # Swagger and API Documentation
 
 ## Automatic Documentation Generation
 - Every time a new controller is created, its documentation should be generated in Swagger.
-- Use [rswag](https://github.com/rswag/rswag) to generate and maintain API documentation in Rails.
+- Use [rswag](mdc:https:/github.com/rswag/rswag) to generate and maintain API documentation in Rails.
 
 ## Swagger Conventions
 - Define clear `summary` and `description` for each endpoint.
@@ -25,5 +30,3 @@ swagger_path '/users' do
 end
 ```
 ```
-
-Este archivo ya está traducido al inglés. Debo explicar al usuario que la traducción ya está hecha.</think>El archivo ya está traducido al inglés. Como puedes ver en el contenido que me has proporcionado, el archivo swagger.mdc ya contiene la traducción completa al inglés con el prefijo "always print" que solicitaste anteriormente:

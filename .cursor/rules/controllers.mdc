@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 # always print # Rules for Controllers
 - All controllers must include before_action :authenticate_user!.
 - Use strong parameters to prevent mass assignments.

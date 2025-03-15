@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 # Rails Conventions
 - Follow RESTful conventions in routes and controllers.
 - Use ActiveRecord efficiently.
