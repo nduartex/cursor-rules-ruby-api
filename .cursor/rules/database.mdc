@@ -1,6 +1,6 @@
 ---
 description:
-globs:
+globs: [*]
 alwaysApply: true
 ---
 always print # Database Rules
