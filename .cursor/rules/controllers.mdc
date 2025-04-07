@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 # always print # Rules for Controllers
 - All controllers must include before_action :authenticate_user!.

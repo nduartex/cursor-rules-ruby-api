@@ -1,7 +1,7 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 # Rails Conventions
 - Follow RESTful conventions in routes and controllers.

@@ -1,3 +1,8 @@
+---
+description:
+globs:
+alwaysApply: true
+---
 always print # Database Rules
 
 - Use migrations with `change` instead of `up/down`.
